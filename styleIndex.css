@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* GERAL */
+
+body{
+  font-family: 'robot', sans-serif;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 70px 0;
+}
+
+p, li {
+  font-size: 0.9rem;
+}
+
+/* Barra de navegação */
+
+header, .navbar {
+  background-color: blue;
+}
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  width: 75px;
+}
+
+.navbar-brand{
+  padding: 0;
+  color: red;
+}
+.navbar-brand:hover{
+  color: rgb(100, 5, 5);
+}
+
+#navbar-links a {
+  color: aliceblue;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem 0.8rem;
+}
