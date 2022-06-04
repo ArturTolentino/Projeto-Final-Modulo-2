@@ -18,9 +18,9 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="styleIndex.css" />
+    <link rel="stylesheet" href="../styleIndex.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Projeto Modulo 2</title>
+    <title>Nossos Planos</title>
 </head>
 <body>
   <div class="container">
@@ -29,7 +29,7 @@
       <nav class="navbar fidex-top navbar-expand-md navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand h1" href="#">
-            <img id="img-logo" src="assets/logo-devify.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <img id="img-logo" src="../assets/logo-devify.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
             <p id="txt-logo">Devify</p>
           </a>
         </div>
@@ -81,48 +81,68 @@
       </nav>
     </div>
   </header>
-  <section>
-     
-        <h1> Nossos Planos </h1>
+
+  <section>   
+         <h1  class= "d-flex flex-row justify-content-center mt-5"> <strong>Nossos Planos</strong> </h1>
+      <section class= "d-flex flex-row justify-content-center">
+       <!--bootstrap nos cards de Planos-->
+    <!--Plano 1-->
+      <div class="card m-5 border-warning" style="width: 22rem; height: 20rem; height: 18rem;">
+        <div>
+          <h5 class="card-title bg-warning d-flex flex-row justify-content-center p-3">Gratuito</h5>
+        </div>
+      <div class="card-body">
+          <p class="card-text">
+            ✔️ Acesso a 5 aulas por mês
+          </p>
+          <p class="card-text">
+            ❌ Dia de dev em uma big tech
+          </p>
+          <p class="card-text">
+            ❌️ Mentoria de carreira, currículo e linkedin
+          </p>
       
-// bootstrap nos cards de Planos
-    //Plano 1
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-
-      <div>
-        <h3>Gratuito</h3>
-      </div>
       
-      //Plano 2
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <!--Plano 2-->
+      <div class="card m-5 border-warning" style="width: 22rem; height: 18rem;">
+        <div>
+          <h5 class="card-title bg-warning d-flex flex-row justify-content-center p-3">R$10/mês</h5>
+        </div>
+      <div class="card-body">
+          <p class="card-text">
+            ✔️ Acesso a 5 aulas por mês
+          </p>
+          <p class="card-text">
+            ✔️ Dia de dev em uma big tech
+          </p>
+          <p class="card-text">
+            ❌️ Mentoria de carreira, currículo e linkedin
+          </p>
+      
         </div>
       </div>
-
-      <div>
-        <h3>Intermediário</h3>
-      </div>
       
-      //Plano 3
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <!--Plano 3 -->
+      <div class="card m-5 border-warning" style="width: 22rem; height: 18rem;">
+        <div>
+          <h5 class="card-title bg-warning d-flex flex-row justify-content-center p-3">R$20/mês</h5>
         </div>
+      <div class="card-body">
+          <p class="card-text">
+            ✔️ Acesso a 5 aulas por mês
+          </p>
+          <p class="card-text">
+            ✔️ Dia de dev em uma big tech
+          </p>
+          <p class="card-text">
+            ✔️ Mentoria de carreira, currículo e linkedin
+          </p>
+      
       </div>
-
-      <div>
-        <h3>Avançado</h3>
       </div>
+    </section>
 
   </section>
+</body>
