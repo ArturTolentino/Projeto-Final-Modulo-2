@@ -112,7 +112,7 @@ class CadastroModel {
         try {
             if(this.validaCep())
             $.ajax({
-                url: `https://viacep.com.br/ws/${this.cep}/json`,
+                url: `https://viacep.com.br/ws/${this.cep.val()}/json`,
                 type: 'GET',
                 success: (resposta) => {
                     this.rua = resposta.logradouro
