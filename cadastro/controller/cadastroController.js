@@ -157,7 +157,7 @@ $("#num-casa").focus(() => {
 $("#botao").on("click", evento => {
     evento.preventDefault()
     if (cadastroModel.validaForm()) {
-        location.replace("google.com")
+        location.replace("#")
     } else {
         cadastroController.validaRG()
         cadastroController.validaSenha()
