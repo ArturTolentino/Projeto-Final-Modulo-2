@@ -1,0 +1,15 @@
+@media(max-width: 1900px) {
+
+  .container-imagens {
+    width: 260px;
+    height: 380px;
+  }
+
+  .container-imagens .icons {
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+    gap: .3rem;
+    list-style: none;
+  }
+}
