@@ -34,7 +34,7 @@
 
 /* BARRA DE NAVEGACAO */
 
-nav {
+nav, .fundo {
   background-color:var(--cor0);
 }
 
@@ -75,3 +75,5 @@ transition: background-size 300ms;
 #navbarNav a {
   margin: 0 0.4rem;
 }
+
+/* Footer */
