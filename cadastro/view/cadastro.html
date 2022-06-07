@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="index.html" defer></script>
+<!-- links da página de inscrição -->
+<script src="../controller/cadastroController.js" defer></script>
+<script src="../model/cadastroModel.js" defer></script>
+<script src="cadastroView.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="styleCadastro.css">
+<!-- links gerais -->
+    <link rel="stylesheet" href="../../styleIndex.css">
+    <link rel="stylesheet" href="./index-media-queries.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Inscreva-se</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <!-- Logo -->
+            <nav class="navbar fidex-top navbar-expand-md navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand h1" href="#">
+                        <img id="img-logo" src="../../assets/logo-devify.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        <p id="txt-logo">Devify</p>
+                    </a>
+                </div>
+
+                <!-- Menu Hamburgue -->
+
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Botões Menu -->
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link active">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">
+                                Planos
+                            </a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">
+                                Contato
+                            </a>
+                        </li>
+
+                        <li id="btn-login" class="nav-item active">
+                            <a href="#" class="nav-link btn btn-warning">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+    </div>
+    </header>
+
+    <!-- Formulário -->
+    <section class="container-fluid px-1 py-5 mx-auto ajuste">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9  col-11 text-center">
+                <div class=" my-5 text-center">
+                    <h1 class="display-4 text-primary">INSCREVA-SE</h1>
+                </div>
+                <div class="card">
+                    <form class="form-card" id="form" action="">
+                        <div class="row justify-content-between text-left">
+
+                            <div class="form-group col-sm-7 flex-column d-flex">
+                                <label>Nome<span class="text-danger"> *</span>
+                                    <input type="text" class="form-control " id="nome"
+                                        placeholder="Nome Completo"></label>
+                            </div>
+
+                            <div class="form-group col-sm-7 flex-column d-flex">
+                                <label>Email<span class="text-danger"> *</span>
+                                    <input type="email" class="form-control" id="email" placeholder="Seu email"></label>
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Senha<span class="text-danger"> * <img id="olho"
+                                            src="../../assets/olhoCadastro.png" /></span>
+                                    <input type="password" class="form-control" id="senha"
+                                        placeholder="Senha de acesso"></label>
+
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Confirmar senha<span class="text-danger"> * <img id="new-olho"
+                                            src="../../assets/olhoCadastro.png" /></span>
+                                    <input type="password" class="form-control" id="confirma-senha"
+                                        placeholder="Confirme sua senha"></label>
+                            </div>
+
+                            <div class="form-group col-sm-7 flex-column d-flex">
+                                <label>RG<span class="text-danger"> *</span>
+                                    <input type="number" class="form-control" id="rg"></label>
+                            </div>
+
+                            <div id="text" class="form-group col-sm-7 flex-column d-flex">
+                                <label>CEP<span class="text-danger"> *</span>
+                                    <input type="number" class="form-control" id="cep" maxlength="8"></label>
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Estado<span class="text-danger"> *</span>
+                                    <input type="text" class="form-control" id="estado"></label>
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Cidade<span class="text-danger"> *</span>
+                                    <input type="text" class="form-control" id="cidade"></label>
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Bairro<span class="text-danger"> *</span>
+                                    <input type="text" class="form-control" id="bairro"></label>
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Rua<span class="text-danger"> *</span>
+                                    <input type="text" class="form-control" id="rua"></label>
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Número<span class="text-danger"> *</span>
+                                    <input type="text" class="form-control" id="num-casa" placeholder="N°"></label>
+                            </div>
+
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Complemento
+                                    <input type="number" class="form-control" id="complemento"
+                                        placeholder="Casa, Apto,Loja"></label>
+                            </div>
+                            <!-- Termos e condições -->
+                            <div class="form-check col-sm-7 flex-column d-flex">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" required>
+                                    Concordo com os <a href="#">Termos e Condições</a>.
+                                </label>
+                                <button type="submit" class="btn btn-primary btn-lg" id="botao">Inscreva-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="planos.html">Planos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="inscricao.html">Inscreva-se</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">SAIBA MAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Conteúdos Tech</a></li>
+                        <li><a href="#">Soft Skills</a></li>
+                        <li><a href="#">Empregabilidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>devify@devify.com.br</li>
+                        <li>75 99999-9999</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                                style="max-width: 140px">Facebook</a></li>
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                                style="max-width: 140px">Twitter</a></li>
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                                style="max-width: 140px">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class=" text-center py-3 fundo">
+            <p class="mb-0">Devify © 2022. Alguns direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
