@@ -76,4 +76,14 @@ transition: background-size 300ms;
   margin: 0 0.4rem;
 }
 
-/* Footer */
+
+
+/* CAIXAS DE PLANOS */
+.bordas {
+  border-color: #F9A826;
+}
+
+.cabecalho-valor {
+  background-color: #F9A826;
+}
+
