@@ -77,7 +77,7 @@ class CadastroModel {
             }}
         else if (this.senha.val().length < 6) {
             throw {
-                "message": "*Senha precisa ter pelo menos 8 dígitos"
+                "message": "*Senha precisa ter pelo menos 6 dígitos"
             }}
             else {
                 return this.senha.val()}
@@ -140,3 +140,5 @@ class CadastroModel {
 }
 
 const cadastroModel = new CadastroModel( $("#nome"), $("#email"), $("#senha"),$("#confirma-senha"),$("#rg"),$("#cep"),$("#estado"),$("#bairro"),$("#cidade"),$("#rua"),$("#num-casa"),)
+const loginModel = new CadastroModel("", $("#emailLogin"), $("#password"))
+const recuperacaoModel = new CadastroModel("", $("#emailEsqueci"))
