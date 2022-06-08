@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,38 +19,33 @@
   crossorigin="anonymous"
 />
 
-<link rel="stylesheet" href="styleIndex.css" />
+<link rel="stylesheet" href="styleLogin.css" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
   <title>Página de Login</title>
+
 </head>
 <body>
   <div>
     <header>
       <!-- Logo -->
+
       <nav class="navbar fidex-top navbar-expand-md navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">
             <img id="img-logo" src="assets/logo-devify.png" alt="logo da Devify" class="d-inline-block">
           </a>
         </div>
-  
+
         <!-- Menu Hamburgue -->
-  
-        <button 
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        class="navbar-toggler"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        >
+
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <!-- Botões Menu -->
-  
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -58,35 +53,87 @@
                 Home
               </a>
             </li>
-  
+
             <li class="nav-item active">
               <a href="./planos/planos.html" class="nav-link">
                 Planos
               </a>
             </li>
-  
+
             <li class="nav-item active">
               <a href="./contato/contato.html" class="nav-link">
                 Contato
               </a>
             </li>
-  
+
             <li id="btn-login" class="nav-item active">
               <a href="./login.html" class="nav-link btn btn-warning">
                 Login
               </a>
             </li>
           </ul>
-  
+
         </div>
       </nav>
-    </div>
+  </div>
   </header>
+ <!-- Login -->
+  <div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+        <form class="border border-warning border-3 rounded-2 py-5 px-3 " action="">
+          <div id="img-login">
+            <img src="assets/Login-img/undraw_login_re_4vu2.svg" alt="">
+          </div>
+          <div class="text-login">
+            <div class="h1">
+              <p>Devify</p>
+            </div>
+            <div class="h3">Faça seu login</div>
+          </div>
+<!-- Email -->
+          <div class="row">
+            <div class="col">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control">
+            </div>
+          </div>
+<!-- Senha -->
+          <div class="row">
+            <div class="col">
+              <label for="password" class="form-label">Senha</label>
+              <input type="password" name="password" id="password" class="form-control">
+            </div>
+          </div>
+<!-- Checkbox -->
+          <div class="row mt-2">
+            <div class="col">
+              <div class="form-check">
+                <input type="checkbox" name="remember" id="remember" class="form-check-input">
+                <label for="remember" class="form-check-label">Manter conectado</label>
+              </div>
+            </div>
+          </div>
+<!-- Esqueci minha senha -->
+          <div class="row my-3 justify-content-end">
+            <div class="col-auto">
+              <a href="#" class="link-warning">Esqueci minha senha</a>
+            </div>
+          </div>
+<!-- Entrar / Cadastrar -->
+          <div id="botao" class="row ">
+            <div class="col-12 col-sm-6 mb-3 ">
+              <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            </div>
+            <div id="botao" class="col-12 col-sm-6">
+              <button type="button" class="btn btn-primary w-100">Cadastrar</button>
+          </div>
 
-  <div class="text-center">
-    <form>
-      <img src="assets/imagem do login.svg" alt="login">
-    </form>
+
+        </form>
+      </div>
+    </div>
+
     <footer class="bg-dark text-white mt-5">
       <div class="container py-3">
         <div class="row">
@@ -131,6 +178,7 @@
         <p class="mb-0">Devify © 2022. Alguns direitos reservados.</p>
       </div>
     </footer>
+
   </div>
 </body>
 </html>
