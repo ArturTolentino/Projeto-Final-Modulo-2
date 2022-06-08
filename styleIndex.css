@@ -126,7 +126,8 @@ transition: background-size 300ms;
 }
 
 .container-imagem {
-  height: 430px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 
