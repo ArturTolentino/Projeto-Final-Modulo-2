@@ -78,10 +78,10 @@
   </div>
   </header>
  <!-- Login -->
-  <div class="container">
+  <div>
     <div class="row justify-content-center align-items-center vh-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-        <form class="border border-warning border-3 rounded-2 py-5 px-3 " action="">
+        <form class="border border-warning border-3 rounded-2 py-5 px-3 mt-3" action="">
           <div id="img-login">
             <img src="assets/Login-img/undraw_login_re_4vu2.svg" alt="">
           </div>
@@ -95,7 +95,7 @@
           <div class="row">
             <div class="col">
               <label class="form-label" for="email">Email</label>
-              <input type="email" name="email" id="email" class="form-control">
+              <input type="email" name="email" id="emailLogin" class="form-control">
             </div>
           </div>
 <!-- Senha -->
@@ -117,7 +117,7 @@
 <!-- Esqueci minha senha -->
           <div class="row my-3 justify-content-end">
             <div class="col-auto">
-              <a href="#" class="link-warning">Esqueci minha senha</a>
+              <a href="./esquecisenha.html" class="link-warning">Esqueci minha senha</a>
             </div>
           </div>
 <!-- Entrar / Cadastrar -->
@@ -126,7 +126,10 @@
               <button type="submit" class="btn btn-primary w-100">Entrar</button>
             </div>
             <div id="botao" class="col-12 col-sm-6">
-              <button type="button" class="btn btn-primary w-100">Cadastrar</button>
+              <a href="./cadastro/view/cadastro.html">
+                <button type="button" class="btn btn-primary w-100">Cadastrar</button>
+              </a>
+              
           </div>
 
 
@@ -134,50 +137,51 @@
       </div>
     </div>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white mt-5">
       <div class="container py-3">
-        <div class="row">
-          <div class="col-md-3 col-6">
-            <h4 class="h6">PÁGINAS</h4>
-            <ul class="list-unstyled">
-              <li><a href="./planos/planos.html">Planos</a></li>
-              <li><a href="./contato/contato.html">Contato</a></li>
-              <li><a href="./cadastro/view/cadastro.html">Inscreva-se</a></li>
-            </ul>
+          <div class="row">
+              <div class="col-md-3 col-6">
+                  <h4 class="h6">PÁGINAS</h4>
+                  <ul class="list-unstyled">
+                      <li><a href="./planos/planos.html">Planos</a></li>
+                      <li><a href="./contato/contato.html">Contato</a></li>
+                      <li><a href="./cadastro/view/cadastro.html">Inscreva-se</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3 col-6">
+                  <h4 class="h6">SAIBA MAIS</h4>
+                  <ul class="list-unstyled">
+                      <li><a href="#">Conteúdos Tech</a></li>
+                      <li><a href="#">Soft Skills</a></li>
+                      <li><a href="#">Empregabilidade</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <h4 class="h6">DADOS DE CONTATO</h4>
+                  <ul class="list-unstyled text-secondary">
+                      <li>devify@devify.com.br</li>
+                      <li>75 99999-9999</li>
+                      <li>De Seg. à Sex. das 8h às 18h</li>
+                  </ul>
+              </div>
+              <div class="col-md-2">
+                  <h4 class="h6">REDES SOCIAIS</h4>
+                  <ul class="list-unstyled">
+                      <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                              style="max-width: 140px">Facebook</a></li>
+                      <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                              style="max-width: 140px">Twitter</a></li>
+                      <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
+                              style="max-width: 140px">Youtube</a></li>
+                  </ul>
+              </div>
           </div>
-          <div class="col-md-3 col-6">
-            <h4 class="h6">SAIBA MAIS</h4>
-            <ul class="list-unstyled">
-              <li><a href="#">Conteúdos Tech</a></li>
-              <li><a href="#">Soft Skills</a></li>
-              <li><a href="#">Empregabilidade</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="h6">DADOS DE CONTATO</h4>
-            <ul class="list-unstyled text-secondary">
-              <li>devify@devify.com.br</li>
-              <li>75 99999-9999</li>
-              <li>De Seg. à Sex. das 8h às 18h</li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <h4 class="h6">REDES SOCIAIS</h4>
-            <ul class="list-unstyled">
-              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#"
-                  style="max-width: 140px">Facebook</a></li>
-              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Twitter</a>
-              </li>
-              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="max-width: 140px">Youtube</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
       <div class=" text-center py-3 fundo">
-        <p class="mb-0">Devify © 2022. Alguns direitos reservados.</p>
+          <p class="mb-0">Devify © 2022. Alguns direitos reservados.</p>
       </div>
-    </footer>
+  </footer>
 
   </div>
 </body>
